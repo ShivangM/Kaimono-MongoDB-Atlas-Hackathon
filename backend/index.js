@@ -84,6 +84,7 @@ app.post("/search", async (req, res) => {
 })
 
 //Server Hosting
-app.listen(5000, () => {
-    console.log("BackEnd started at port 5000")
+const port = process.env.PORT
+app.listen(port, () => {
+    console.log(`BackEnd started at port ${port}`)
 })
