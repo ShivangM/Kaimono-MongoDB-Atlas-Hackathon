@@ -1,8 +1,8 @@
 <p align="center">
    <br/>
    <a href="" target="_blank"><img width="150px" src="https://i.ibb.co/zNJ1p6d/KAImono-1920-x-720-px.png" /></a>
-   <h3 align="center">Movie Flixer</h3>
-   <p align="center">Search 🔍 and Rate ⭐ your Favorite Movies and shows!</p>
+   <h3 align="center">Kaimono</h3>
+   <p align="center">Bye grocery online!</p>
 </p>
 
 <div align="center">
