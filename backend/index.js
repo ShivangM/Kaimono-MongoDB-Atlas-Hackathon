@@ -66,17 +66,17 @@ app.post("/search", async (req, res) => {
     const { name } = req.body
     
     const query = await item.aggregate([
-      {
-        $search: {
-          index: 'default',
-          text: {
-            query: name,
-            path: {
-              'wildcard': '*'
+        {
+            "$search": {
+                "autocomplete": {
+                    "query": name,
+                    "path": "name",
+                    "fuzzy": {
+                        "maxEdits": 1
+                    }
+                 }
             }
-          }
         }
-      }
     ]).exec();
 
     const result = query
