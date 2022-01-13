@@ -40,7 +40,7 @@ You'll need a `.env` file in the `backend` directory.
 It looks like this -
 
 ```bash
-PORT = 8080
+PORT = 5000
 
 MONGO_URI = Database connection String
 ```
@@ -48,13 +48,5 @@ MONGO_URI = Database connection String
 ### Starting the application
 
 ```bash
-cd frontend
-
-npm start
-```
-
-```bash
-cd backend
-
-node index.js
+npm run dev
 ```
