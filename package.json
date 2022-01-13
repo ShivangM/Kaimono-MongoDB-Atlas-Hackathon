@@ -1,0 +1,29 @@
+{
+  "name": "mongodb-atlas-hackathon",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r    <br/>\r    <a href=\"\" target=\"_blank\"><img width=\"150px\" src=\"https://i.ibb.co/zNJ1p6d/KAImono-1920-x-720-px.png\" /></a>\r    <h3 align=\"center\">Kaimono</h3>\r    <p align=\"center\">Bye grocery online!</p>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivangM/Kaimono-MongoDB-Atlas-Hackathon.git"
+  },
+  "author": "Shivang Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShivangM/Kaimono-MongoDB-Atlas-Hackathon/issues"
+  },
+  "homepage": "https://github.com/ShivangM/Kaimono-MongoDB-Atlas-Hackathon#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  }
+}
