@@ -10,6 +10,7 @@ const initialState = {
 export const ProductsStateContext = createContext();
 export const ProductsDispatchContext = createContext();
 
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "GET_PRODUCTS_REQUEST":
@@ -52,8 +53,7 @@ export const getProducts = (dispatch) => {
   dispatch({
     type: "GET_PRODUCTS_REQUEST"
   });
-  const url =
-    "http://localhost:5000/item";
+  const url = "/item";
   axios
     .get(url)
     .then((response) => {

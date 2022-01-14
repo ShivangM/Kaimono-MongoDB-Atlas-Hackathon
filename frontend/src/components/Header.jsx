@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import classNames from "classnames";
 import { Link } from "react-router-dom";
 import {
   CartStateContext,
@@ -20,7 +19,7 @@ const Header = (props) => {
 
   const handleSearchInput = async () => {
     const word = document.getElementById("searchBar").value;
-    const url = "http://localhost:5000/search";
+    const url = "/search";
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
