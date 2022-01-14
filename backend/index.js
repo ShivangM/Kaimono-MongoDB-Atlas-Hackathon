@@ -16,8 +16,8 @@ app.use(cors())
 
 dotenv.config()
 
-// // Serve static files from the React frontend app
-// app.use(express.static(path.join(__dirname, '../frontend/build')))
+// Serve static files from the React frontend app
+app.use(express.static(path.join(__dirname, '../frontend/build')))
 
 
 //DB Connect
