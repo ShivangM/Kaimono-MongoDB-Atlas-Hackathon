@@ -3,7 +3,7 @@ import cors from "cors"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import path from 'path';
-// const __dirname = path.resolve();
+const __dirname = path.resolve();
 
 const app = express()
 app.use(express.json())
